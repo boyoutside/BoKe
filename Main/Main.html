@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>阿Ken博客</title>
+<style type="text/css">
+<!--
+	@import url("CSS/Main.css");
+-->
+</style>
+    
+</head>
+
+<body>
+    <embed src="" width="" height="" hidden="true" autostart="true" loop=infinite></embed>
+	<div class="all_background">
+		<div class="select_background">
+			<ul>
+				<li><a href="#">注册</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#" class="btn">换肤</a></li>
+				<li><a href="#">反馈</a></li>
+			</ul>
+		</div>
+		<div class="Skin_background">
+		    <a href="#" onclick="changeBackground(2,'#151213')"><div><img src="images_Skin/2-1.gif"></div></a>
+		    <a href="#" onclick="changeBackground(3,'#011B28')"><div><img src="images_Skin/3-1.gif"></div></a>
+		    <a href="#" onclick="changeBackground(4,'#18132A')"><div><img src="images_Skin/4-1.gif"></div></a>
+		    <a href="#" onclick="changeBackground(5,'#071820')"><div><img src="images_Skin/5-1.gif"></div></a>
+		    <a href="#" onclick="changeBackground(6,'#121212')"><div><img src="images_Skin/6-1.gif"></div></a>
+		</div>
+		<div class="pic_background" id="change_Background">
+			<div class="text">
+				<img class="head" src="images_logo/Rabit_01.jpg">
+				<img class="head_border" src="images_logo/head_icon.png">
+			</div>
+			<div class="icon_name">
+				<div class="name">
+					<a name="Top" href="Main.html" style="text-decoration:none;"><h1>阿Ken<br>博客</h1></a>
+				</div>
+				<div class="icon">
+					<div></div><a href="#"><p>随心所欲....</p></a>
+				</div>
+			</div>
+			<div class="book">
+				<img class="pic1" src="images_logo/book_01.png">
+				<div class="text_scroll">
+					<div class="text_scrollbox">
+						<div>
+							<marquee direction="right" scrollamount="3" behavior="scroll">
+							<h2><p style="font-weight:bold;color:red;">欢迎光临!</p></h2>
+							<h2><p style="font-weight:bold;color:red;">阿Ken博客!</p></h2>
+							</marquee>
+						</div>
+					</div>
+					<img class="pic2" src="images_logo/book_02.png"><img>
+				</div>
+			</div>
+			<div class="corner">
+			
+			</div>
+			<div class="menu">
+				<ul class="ul1">
+					<li class="menu1"><a href="#" onclick="getMainShow('bottom/mainPage.html')">主页</a></li>
+					<li class="menu1"><a href="#" onclick="getShow('bottom/Works.html')">作品集</a>
+					</li>
+					<li class="menu1"><a href="#">英文阁</a>
+                        <ul>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/oneDay.html')">第一天</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/twoDay.html')">第二天</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/threeDay.html')">第三天</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/fourDay.html')">第四天</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/fiveDay.html')">第五天</a></li>
+						</ul>
+					</li>
+                    <li class="menu1"><a href="#">收藏阁</a>
+                        <ul>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/construction.html')">结构优化</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/link.html')">链接优化</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('Dailys/page.html')">页面优化</a></li>
+							</ul>
+					</li>
+                    <li class="menu1"><a href="#">关于我</a>
+                        <ul>
+							<li class="menu2"><a href="#" onclick="getShow('bottom/Introduce.html')">简介</a></li>
+							<li class="menu2"><a href="#" onclick="getShow('bottom/Album.html')">相册</a></li>
+						</ul>
+					</li>
+                    <li class="menu1"><a href="#" onclick="getShow('bottom/MyMessage.html')">留言板</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom" id="bottom">
+			<iframe src="bottom/mainPage.html"  id="iframbox" width="100%" frameborder="0"  height="10000"></iframe>
+            <iframe src="bottom/tagTable.html"  id="Iframe1" width="0%" frameborder="0"  height="10000"></iframe>
+		</div>
+	</div>
+    <div class="panel_Share">
+        <iframe src="Share.html" id="Iframe2" width="100%" frameborder="0"  height="295"></iframe>
+    </div>
+    <div class="music_Player" id="music_Player">
+        <audio src="sound/1.mp3" id="music_1"></audio>
+        <audio src="sound/2.mp3" id="music_2"></audio>
+        <audio src="sound/3.mp3" id="music_3"></audio>
+        <audio src="sound/4.mp3" id="music_4"></audio>
+        <audio src="sound/5.mp3" id="music_5"></audio>
+        <audio src="sound/6.mp3" id="music_6"></audio>
+        <audio src="sound/7.mp3" id="music_7"></audio>
+        <audio src="sound/8.mp3" id="music_8"></audio>
+        <div class="songList">
+            <div class="song_Box">
+                <ul>
+                    <li><a href="#" onclick="play(1,'music_1')">胡歌 - 风起时 (《琅琊榜》电视剧主题曲)</a></li>
+                    <li><a href="#" onclick="play(2,'music_2')">胡歌 - 乌云然 (《射雕英雄传》金庸武侠大戏08片尾曲)</a></li>
+                    <li><a href="#" onclick="play(3,'music_3')">胡歌 - 逍遥叹 (《仙剑奇侠传》插曲)</a></li>
+                    <li><a href="#" onclick="play(4,'music_4')">刘涛 - 红颜旧</a></li>
+                    <li><a href="#" onclick="play(5,'music_5')">王凯 - 赤血红殷</a></li>
+                    <li><a href="#" onclick="play(6,'music_6')">古筝-《高山流水》</a></li>
+                    <li><a href="#" onclick="play(7,'music_7')">纯音乐-神秘园之歌</a></li>
+                    <li><a href="#" onclick="play(8,'music_8')">纯音乐-月亮门</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="music_Box">
+            <a href="#"><div class="listIcon">
+            </div>
+            </a>
+            <div class="songer">
+                
+            </div>
+            <div class="control">
+                <div class="last">
+                    <a href="#" onclick="playLast()"><span></span></a>
+                </div>
+                <div class="stop">
+                    <a href="#"><span class="Start"></span></a>
+                </div>
+                <div class="next">
+                    <a href="#" onclick="playNext()"><span></span></a>
+                </div>
+                <div class="contract_music" onclick="contract_music()">
+                    <a href="#"><span id="contract_music"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backTop"><a href="#Top">回到顶部</a></div>
+    <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        function changeTheme() {
+            var i = 6;
+            //var change_Background = document.getElementById("change_Background");
+            //$("#change_Background").css("background", "url(2_top.jpg) no-repeat)");
+            //change_Background.style.cssText= "background:url(images_logo" + i + "_top.jpg) no-repeat";
+            i++;
+            if(i>5){
+                i = 1;
+            }
+            setTimeout(changeTheme,100000);
+        }
+        function getShow(content) {
+            var iframe = document.getElementById("iframbox");
+			var Iframe1 = document.getElementById("Iframe1");
+			iframe.style.width="75%";
+			Iframe1.style.width="24%"
+            iframe.src = content;
+        }
+		function getMainShow(content) {
+            var iframe = document.getElementById("iframbox");
+			var Iframe1 = document.getElementById("Iframe1");
+			iframe.style.width="100%";
+			Iframe1.style.width="0%";
+            iframe.src = content;
+        }
+        //皮肤框展示区
+        $(".btn").click(function(e){
+			$(".Skin_background").slideToggle("slow");
+			e.stopPropagation();//阻止事件
+		});
+		//--皮肤框隐藏区
+		$(document).click(function(e){
+			$(".Skin_background").slideUp("slow");
+			e.stopPropagation();//阻止事件
+		});
+        //点击换背景图片
+        function changeBackground(img,color){
+            var bottom=document.getElementById("bottom");
+            $("#change_Background").css("background","url(images_Skin/"+img+".jpg)");
+            $("#change_Background").css("background-repeat","no-repeat");
+            $("#change_Background").css("background-size","100% 240px");
+            $("#change_Background").css("margin-top","29px");
+            bottom.style.background=color;
+        }
+        
+    </script>
+    <script type="text/javascript">
+        var music;
+        var i=0;
+        var Tag=false;
+        var gray=true;
+        var Stop=false;
+        var stopGray=true;
+        //展示歌曲列表
+        $(".listIcon").click(function(){
+            $(".songList").fadeToggle("slow");
+        });
+        //点击歌曲名播放
+        function play(i,music){
+            //暂停按钮变灰色
+            $(".Start").css("background-position","504px -92px");
+            Stop=false;
+            if(Tag){
+                this.music.pause();
+                this.music.currentTime =0;
+            }
+            this.i=i;
+            this.music=document.getElementById(music);
+            this.music.play();
+            Tag=true;
+        }
+        //点击暂停
+        $(".Start").click(function(){
+            //非暂停状态
+            if(Stop){
+                music.play();
+                Stop=false;
+                //暂停灰色
+                $(".Start").css("background-position","504px -92px");
+            }else{
+                music.pause();
+                Stop=true;
+                //播放灰色
+                $(".Start").css("background-position","692px -3px");
+                gray=true;
+            }
+        });
+        //鼠标移动到位置
+        $(".Start").hover(function(){
+            if(Stop){
+                if(gray){
+                //变播放白色
+                    $(".Start").css("background-position","692px -44px");
+                    gray=false;
+                }
+            }else{
+                if(stopGray){
+                //变暂停白色
+                    $(".Start").css("background-position","462px -91px");
+                    stopGray=false;
+                }
+            }
+        });
+        //鼠标离开位置
+        $(".Start").mouseout(function(){
+            if(Stop){
+                if(!gray){
+                //变播放灰色
+                    $(".Start").css("background-position","692px -3px");
+                    gray=true;
+                }
+            }else{
+                if(!stopGray){
+                //变暂停灰色
+                    $(".Start").css("background-position","504px -92px");
+                    stopGray=true;
+                }
+            }
+        });
+        //播放上一曲
+        function playLast(){
+            music.pause();
+            music.currentTime =0;
+            i--;
+            if(i<0){
+                i=8;
+            }
+            music=document.getElementById("music_"+i);
+            music.play();
+        }
+        //播放下一曲
+        function playNext(){
+            music.pause();
+            music.currentTime =0;
+            i++;
+            if(i>8){
+                 i=1;           
+            }
+            music=document.getElementById("music_"+i);
+            music.play();
+        }
+        //点击收缩音乐播放器
+        var Drag=-1;
+        function contract_music(){
+            var contract_music=document.getElementById("contract_music");
+            var music_Player=document.getElementById("music_Player");
+            if(Drag==1){
+                music_Player.style.left="-363px";
+                $("#contract_music").css("background-position","777px -18px");
+            }else{
+                music_Player.style.left="0px";
+                $("#contract_music").css("background-position","800px -18px");
+            }
+            Drag=-Drag;
+            music_Player.style.transition="all 1s ease";
+            contract_music.style.transition="all 1s ease";
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的相册</title>
+</head>
+
+<style type="text/css">
+	@import url("CSS/Album.css");
+</style>
+
+<body>
+	<div class="album">
+    	<div class="photoShow" id="photoShow">
+        	<div class="close">
+            	<a href="#" onclick="closeShow()">X</a>
+            </div>
+            <div class="photoShow_box">
+            	<div class="last">
+                	<a href="#" onclick="lastPhoto()"><div class="last_icon"></div></a>
+                </div>
+                <div class="show">
+                	<img id="photo" src="albumPhoto/兔兔/1.jpg">
+                </div>
+                <div class="next">
+                	<a href="#" onclick="nextPhoto()"><div class="next_icon"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="album_box">
+            <table cellpadding="10" cellspacing="10">
+                <tr>
+                    <td>
+                        <a href="#">
+                            <div onclick="openShow('albumPhoto/兔兔/',16)" class="shadow"><div class="name">兔兔</div></div><img src="albumPhoto/兔兔/5.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div onclick="openShow('albumPhoto/美女/',10)" class="shadow"><div class="name">美女</div></div><img src="albumPhoto/美女/5.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div onclick="openShow('albumPhoto/胡歌/',7)" class="shadow"><div class="name">琅琊榜</div></div><img src="albumPhoto/胡歌/5.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="shadow"><div class="name">兔兔</div></div><img src="albumPhoto/兔兔/5.jpg">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">
+                            <div class="shadow"><div class="name">兔兔</div></div><img src="albumPhoto/兔兔/5.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="shadow"><div class="name">兔兔</div></div><img src="albumPhoto/兔兔/5.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="shadow"><div class="name">兔兔</div></div><img src="albumPhoto/兔兔/5.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="shadow"><div class="name">兔兔</div></div><img src="albumPhoto/兔兔/5.jpg">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        var i=1;
+        var imgUrl="";
+        var count=1;
+        var photo=document.getElementById("photo");
+        //关闭图片展示框
+        function closeShow() {
+            $("#photoShow").fadeOut(1000);
+            i=1;
+        }
+        //弹出图片展示框
+        function openShow(imgUrl,count) {
+            this.imgUrl=imgUrl;
+            this.count=count;
+            photo.src=this.imgUrl+i+".jpg";
+            $("#photoShow").fadeIn(1000);
+        }
+        //上一张图片
+        function lastPhoto() {
+            i--;
+            if(i<=0){
+                i=count;
+            }
+            var photo=document.getElementById("photo");
+            photo.src=imgUrl+i+".jpg";
+        }
+        //下一张图片
+        function nextPhoto() {
+            i++;
+            if(i>count){
+                i=1;
+            }
+            photo.src=imgUrl+i+".jpg";
+        }
+        
+    </script>
+    
+    
+</body>
+</html>

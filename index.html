@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>首页</title>
+</head>
+<style type="text/css">
+	@import url("CSS/index.css");
+</style>
+
+<body>
+<!----Page---START----->
+<div class="Page_one">
+	<div class="cares">
+		<img class="row1" src="images_car/car_05.gif" width="12%" height="19%">
+		<img src="images_car/car_06.gif" width="12%" height="19%"><br>
+		<img class="row2" src="images_car/car_11.gif" width="12%" height="19%">
+		<img src="images_car/car_12.gif" width="12%" height="19%">
+		<img src="images_car/car_13.gif" width="12%" height="19%">
+		<img src="images_car/car_14.gif" width="12%" height="19%">
+		<img src="images_car/car_15.gif" width="12%" height="19%"><br>
+		<img class="row3" src="images_car/car_18.gif" width="12%" height="19%">
+		<img src="images_car/car_19.gif" width="12%" height="19%">
+		<img src="images_car/car_20.gif" width="12%" height="19%">
+		<img src="images_car/car_21.gif" width="12%" height="19%">
+		<img src="images_car/car_22.gif" width="12%" height="19%">
+		<img src="images_car/car_23.gif" width="12%" height="19%">
+		<img src="images_car/car_24.gif" width="12%" height="19%">
+		<img src="images_car/car_25.gif" width="12%" height="19%">
+		<img src="images_car/car_26.gif" width="12%" height="19%">
+		<img src="images_car/car_27.gif" width="12%" height="19%">
+		<img src="images_car/car_28.gif" width="12%" height="19%">
+		<img src="images_car/car_29.gif" width="12%" height="19%">
+		<img src="images_car/car_30.gif" width="12%" height="19%"><br>
+		<img class="row5" src="images_car/car_34.gif" width="12%" height="19%">
+		<img src="images_car/car_35.gif" width="12%" height="19%">
+		<img src="images_car/car_36.gif" width="12%" height="19%">
+	</div>
+</div>
+<div class="Page_two">
+	<div class="bt_left">
+		<ol>
+			<li>11111111111</li>
+			<li>11111111111</li>
+			<li>11111111111</li>
+			<li>11111111111</li>
+		</ol>
+	</div>
+	<div class="bt_background">
+		<div class="bt_enter">
+			<a href="#"><b>进入主页</b></a>
+		</div>
+	</div>
+	<div class="bt_right">
+	
+	</div>
+</div>
+<!----Page---END------>
+	<!----jqeury---start----->
+	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+	<script type="text/javascript">
+	<!---点击进入按钮事件-->
+	$(".bt_enter").click(function(e){
+		$(".Page_one").slideUp(3000);
+		$(".Page_two").slideUp(3000,function(){
+			window.location.href="Main/Main.html";
+		})
+		e.stopPropagation();//阻止事件
+	});
+	</script>
+	<!----jqeury---end----->
+</body>
+
+</html>

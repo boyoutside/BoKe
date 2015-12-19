@@ -1,0 +1,26 @@
+/* CSS Document */
+/* 第一页与第二页布局 */
+	body{background:url(../images_logo/background_active2.gif)}
+	.Page_one{ position:absolute;background:url(../images_logo/背景图1.jpg);top:0;left:0;width:100%;height:70%;border-bottom:5px groove #00ECFF}
+	.Page_two{ position:absolute;background:#040006; bottom:0;left:0;width:100%;height:29%;border-top:thick dotted rgba(0, 255, 236, 0.79)}
+	/* 赛车封面的布局 */
+	.Page_one .cares{position:absolute;width:90%;height:90%;top:5%;left:5%;}
+	.Page_one .cares img{margin:0px -5px 1px 0px;}
+	.Page_one .cares .row1{margin-left:49%}
+	.Page_one .cares .row2{margin-left:24.5%}
+	.Page_one .cares .row3{margin-left:12.2%}
+	.Page_one .cares .row5{margin-left:12.2%}
+	/* 按钮背景左边布局 */
+	.Page_two .bt_left{float:left;width:420px;height:100%;color:#FF0000;font-size:24px;}
+	/* 按钮背景左边的文字修饰 */
+	.Page_two .bt_left ol{position:absolute;padding:17px 70px;}
+	.Page_two .bt_left ol li{padding-top:5px}
+	/* 按钮背景 */
+	.Page_two .bt_background{float:left;clear:none;position:relative;background-size:500px 200px;width:500px;height:100%;}
+	/* 进入按钮 */
+	.Page_two .bt_background .bt_enter{position:relative;border:0.2cm groove #620B0B;background:linear-gradient(#33C080,rgb(41, 79, 123));width:30%;height:20%;top:36%;left:26%;border-radius:5px;padding-left:7%;color:#000000;text-decoration:none;box-shadow:1px 1px 1px #E2A92E;}
+	.Page_two .bt_background .bt_enter:hover{position:relative;border:0.2cm groove #620B0B;background:linear-gradient(#33C080,rgb(77, 11, 11));width:30%;height:20%;top:38%;left:26%;border-radius:5px;padding-left:7%;box-shadow:2px 2px 58px #12E5ED}
+	/* 按钮内部a标签 */
+	.Page_two .bt_background .bt_enter a{color:#000000;text-decoration:none;text-shadow:1px 1px 1px #f00;font-size:30px;}
+	/* 按钮右边布局 */
+	.Page_two .bt_right{float:left;position:relative;width:420px;height:100%;background:url(../GIF/前行人物.gif);background-size:420px 100%;}

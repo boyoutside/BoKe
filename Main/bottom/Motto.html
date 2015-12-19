@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MOTTO</title>
+<style type="text/css">
+    * {
+    color:#fff;
+    font-style:normal;
+    font-family: "幼圆";
+    }
+    .ban_Content {
+    width:99%;
+    height:578px;
+    border:0px solid #f00 #00a84b;
+    box-shadow:3px -3px 18px;
+    background:rgba(106, 103, 160, 0.3);
+    }
+</style>
+</head>
+<body>
+    <div class="ban_Content">
+        <h2 id="text_Content">当你走远了，你可能会忘记为什么而出发.....</h2>
+        <h3 id="p1">当你进退两难的时候如何做出决定？——抛硬币，当你第一次抛了以后想再抛一次的时候，你就已经知道答案了.....</h3>
+        <h3 id="H1">Think more about each other's strengths, tolerance of each other's shortcomings, conflict of time to think about what was wrong with his.....</h3>
+        <h3>芦苇：香港大学孙教授：大学，就应该是早起吃点早餐；跑跑步；专业课认真听；公共课看看自己喜欢的杂志；中午小睡一会儿；下午参加个社团活动或打打篮球；晚上陪着喜欢的人散散步；或去自习室安静地看看书.....</h3>
+        <h3>平凡的世界，平凡的人，经历各种痛苦与磨难，祸与福在那历史这座桥梁上依旧轮番上演.....</h3>
+    </div>
+
+</body>
+    <script type="text/javascript">
+        //var text = document.getElementById("text_Content");
+        //var p1 = document.getElementById("p1");
+        //var H1 = document.getElementById("H1");
+        function getRandomColor() {
+            text.style.color = "#" + ("00000" + ((Math.random() * 16777215 + 0.5) >> 0).toString(16)).slice(-6);
+            p1.style.color = "#ff6a00";
+            H1.style.color = "#00a84b";
+            setTimeout(getRandomColor, 1000);
+        }
+    </script>
+</html>

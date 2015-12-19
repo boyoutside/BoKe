@@ -1,0 +1,133 @@
+/* CSS Document */
+.menu_left{
+    width:25%;
+    height:600px;
+    float:left;
+    margin-top:-435px;
+    transition:all 1s ease;
+}
+.menu_left:hover{
+    margin-top:0px;
+    transition:all 1s ease;
+}
+    .menu_left .menu {
+        width:100%;
+        height:70%;
+        background:url(../images_logo/menu_border.png) no-repeat;
+        background-size:90px 410px;
+    }
+        .menu_left .menu ul {
+        width:80%;
+        height:90%;
+        }
+        .menu_left .menu ul li {
+        width:160px;
+        line-height:50px;
+        border:0px solid #ffd800;
+        list-style:none;
+        text-align:center;
+        margin-left:20%;
+        font-size:25px;
+        float:left;
+        margin-bottom:10px;
+        }
+            .menu_left .menu ul li:nth-child(1) {
+            margin-left:15%;
+            }
+            .menu_left .menu ul li:nth-child(2) {
+            margin-left:16%;
+            }
+            .menu_left .menu ul li:nth-child(3) {
+            margin-left:11%;
+            }
+            .menu_left .menu ul li:nth-child(4) {
+            margin-left:14%;
+            }
+            .menu_left .menu ul li:nth-child(5) {
+            margin-left:20%;
+            }
+            .menu_left .menu ul li:nth-child(6) {
+            margin-left:26%;
+            }
+            .menu_left .menu ul li:nth-child(7) {
+            margin-left:25%;
+            }
+            .menu_left .menu ul li a {
+            text-decoration:none;
+            color:#D2FDF0;
+            float:left;
+            }
+            .menu_left .menu ul li:hover{
+            box-shadow:#ffd800 0px 0px 94px;
+            text-shadow:2px 1px 30px;
+            border-radius:15px;
+            transition:all 1s ease;
+            background:rgba(118, 219, 255, 0.29);
+            }
+                .menu_left .menu ul li:nth-child(1) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:560px 725px;
+                width:48px;
+                height:48px;
+                }
+                .menu_left .menu ul li:nth-child(2) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:506px 722px;
+                width:48px;
+                height:48px;
+                }
+                .menu_left .menu ul li:nth-child(3) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:449px 722px;
+                width:48px;
+                height:48px;
+                }
+                .menu_left .menu ul li:nth-child(4) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:452px 631px;
+                width:48px;
+                height:48px;
+                }
+                .menu_left .menu ul li:nth-child(5) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:506px 879px;
+                width:48px;
+                height:48px;
+                }
+                .menu_left .menu ul li:nth-child(6) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:454px 59px;
+                width:48px;
+                height:48px;
+                }
+                .menu_left .menu ul li:nth-child(7) a div {
+                float:left;
+                background:url(../images_logo/Web_icon.png);
+                background-position:554px 117px;
+                width:48px;
+                height:48px;
+                }
+    .menu_left .rotate {
+        width:100%;
+        height:30%;
+        background:url(../images_logo/Dot2.png) no-repeat;
+        background-size:250px 126px;
+        background-position:0px 25px;
+        transform:rotate(0deg);
+        transition:all 1s ease;
+    }
+        .menu_left:hover .rotate {
+        transform:rotate(180deg);
+        transition:all 1s ease;
+        }
+.Show {
+float:left;
+width:74%;
+height:600px;
+}

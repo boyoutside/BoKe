@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>作品集</title>
+
+<style type="text/css">
+	@import url("CSS/Works.css");
+    
+</style>
+
+</head>
+<body>
+	<div class="menu_left">
+		<div class="menu">
+            <ul>
+                <li><a href="#" onclick="getShow('Motto.html')"><div></div>小记栏</a></li>
+                <li><a href="#" onclick="getShow('Snake.html')"><div></div>娱乐时刻</a></li>
+                <li><a href="#" onclick="getShow('bullet_screen.html')"><div></div>视频弹幕</a></li>
+                <li><a href="#" onclick="getShow('Skin.html')"><div></div>换皮肤</a></li>
+                <li><a href="#"><div></div>菜单栏</a></li>
+                <li><a href="#"><div></div>菜单栏</a></li>
+                <li><a href="#"><div></div>菜单栏</a></li>
+            </ul>
+        </div>
+        <div class="rotate">
+            
+        </div>
+	</div>
+    <div class="Show">
+        <iframe src="Motto.html"  id="iframbox" width="100%" frameborder="0"  height="1200" scrolling="no"></iframe>
+    </div>
+    <script type="text/javascript">
+        function getShow(content) {
+            var iframe = document.getElementById("iframbox");
+            iframe.src = content;
+        }
+    </script>
+</body>
+</html>

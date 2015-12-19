@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>tagTable</title>
+<style type="text/css">
+    @import url("CSS/tagTable.css");
+    
+</style>
+</head>
+<body onload="getRandombgColor()">
+    <div class="font_Draw">
+        
+    </div>
+    <table id="tagTable">
+        <tr>
+            <td style="width:45%;height:50px;font-family:幼圆" colspan="9" bgcolor="#FFFFFF"><h1 style="margin-top:5px;margin-bottom:5px">名人墙</h1></td>
+        </tr>
+        <tr>
+            <td style="width:20%" colspan="2"><a href="#" onclick="personShow('person/Robin(李彦宏).html')">李彦宏</a></td>
+            <td style="width:30%" colspan="3"><a href="#" onclick="personShow('person/丁磊.html')">丁磊</a></td>
+            <td style="width:40%" colspan="4"><a href=# onclick="personShow('person/胡歌.html')">胡歌</a></td>
+        </tr>
+        <tr>
+            <td style="width:30%" colspan="3"><a href=# onclick="personShow('person/高圆圆.html')">高圆圆</a></td>
+            <td style="width:30%" colspan="3"><a href=# onclick="personShow('person/陈天桥.html')">陈天桥</a></td>
+            <td style="width:30%" colspan="3"><a href=# onclick="personShow('person/雷军.html')">雷军</a></td>
+        </tr>
+        <tr>
+            <td style="width:20%" colspan="2"><a href=# onclick="personShow('person/杨元庆.html')">杨元庆</a></td>
+            <td style="width:40%" colspan="4"><a href=# onclick="personShow('person/汪延.html')">汪延</a></td>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+        </tr>
+       <tr>
+            <td style="width:45%" colspan="4.5"><a href=#></a></td>
+            <td style="width:35%" colspan="3.5"><a href=#></a></td>
+            <td style="width:15%" colspan="1.5"><a href=#></a></td>
+        </tr>
+        <tr>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:20%" colspan="2"><a href=#></a></td>
+            <td style="width:40%" colspan="4"><a href=#></a></td>
+        </tr>
+        <tr>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:40%" colspan="4"><a href=#></a></td>
+            <td style="width:20%" colspan="2"><a href=#></a></td>
+        </tr>
+       <tr>
+            <td style="width:45%" colspan="4.5"><a href=#></a></td>
+            <td style="width:35%" colspan="3.5"><a href=#></a></td>
+            <td style="width:15%" colspan="1.5"><a href=#></a></td>
+        </tr>
+        <tr>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+        </tr>
+        <tr>
+            <td style="width:45%" colspan="4.5"><a href=#></a></td>
+            <td style="width:35%" colspan="3.5"><a href=#></a></td>
+            <td style="width:15%" colspan="1.5"><a href=#></a></td>
+        </tr>
+        <tr>
+            <td style="width:20%" colspan="2"><a href=#></a></td>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:40%" colspan="4"><a href=#></a></td>
+        </tr>
+        <tr>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+            <td style="width:30%" colspan="3"><a href=#></a></td>
+        </tr>
+    </table>
+    <div class="person_Panel" id="person_Panel">
+        <div class="back">
+            <a href="#" id="hand">☛</a>
+        </div>
+        <div class="person">
+            <iframe src="person/Robin(李彦宏).html"  id="IT_Person" width="100%" frameborder="0"  height="100%"></iframe>
+        </div>
+    </div>
+<script type="text/ecmascript">
+        function getRandombgColor() {
+            var tagTable = document.getElementById("tagTable");
+            if (tagTable) {
+                for (var i = 1; i < tagTable.rows.length; i++) {
+                    for (var j = 0; j < tagTable.rows[i].cells.length; j++) {
+                       // tagTable.rows[i].cells[j].style.backgroundColor = "#" + ("00000" + ((Math.random() * 16777215 + 0.5) >> 0).toString(16)).slice(-6);
+                        var r = Math.ceil(Math.random() * 255);
+                        var g = Math.ceil(Math.random() * 255);
+                        var b = Math.ceil(Math.random() * 255);
+                       // tagTable.rows[i].cells[j].style.backgroundColor = "rgba(39, 127, 139, 1)";
+                        tagTable.rows[i].cells[j].style.backgroundColor = "rgba(" + r + "," + g + "," + b + ",0.6)";
+                    }
+                }
+            }
+            setTimeout(getRandombgColor, 5000);
+        }
+        
+        //点击手指，名人简介表向右移动
+        var hand = document.getElementById("hand");
+        var person_Panel = document.getElementById("person_Panel");
+        hand.onclick=function move(){
+            person_Panel.style.left="100%";
+            person_Panel.style.transition="all 1s ease";
+        }
+        
+        //点击名人，名人简介表显示
+        function personShow(name) {
+            var IT_Person=document.getElementById("IT_Person");
+            IT_Person.src=name;
+            person_Panel.style.left="3%";
+            person_Panel.style.transition="all 1s ease";
+        }
+</script>  
+</body>
+</html>

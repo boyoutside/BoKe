@@ -1,0 +1,59 @@
+	.font_Draw {
+    width:100%;
+    height:164px;
+    margin-top:28px;
+    margin-bottom:11px;
+    border:0px solid #fff;
+    background:url("../images_logo/Font_01.png") no-repeat #f00;
+    background-size:304px 155px;
+    box-shadow:3px -3px 18px;
+    }
+    table tr td a{
+    text-decoration:none;
+    color:#fff;
+    }
+    table {
+    width:100%;
+    border-color:#000;
+    }
+    tr {
+    height:30px;
+    }
+    td {
+    text-align:center;
+    color:#000;
+    font-size: 20px;
+	font-weight: bold;
+    }
+    .person_Panel{
+    position:absolute;
+    width:95%;
+    height:350px;
+    top:263px;
+    left:100%;
+    background:rgba(255, 255, 255, 0.75);
+    }
+    .person_Panel .back{
+    border:1px solid #000;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    position:absolute;
+    z-index:10;
+    }
+    .person_Panel .back:hover{
+    background:rgba(166, 154, 154, 0.8);
+    }
+    .person_Panel .back a{
+    text-decoration:none;
+    color:#000;
+    font-size:50px;
+    margin-top:-13px;
+    display:block;
+    }
+    .person_Panel .person{
+    position:relative;
+    width:100%;
+    height:100%;
+    z-index:0;
+    }

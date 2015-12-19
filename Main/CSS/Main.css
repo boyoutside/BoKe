@@ -1,0 +1,484 @@
+/* CSS Document */
+
+	body{background:#000000;font-family: "свт╡";}
+	.all_background{position:absolute;left:0px;top:0px;width:100%;height:2000px;border:1px solid #999999;}
+	.Skin_background
+	{
+		width:56%;
+		height:162px;
+		position:absolute;
+		left:17%;
+		background:rgba(255, 255, 255, 0.39);
+		top:30px;
+		display:none;
+		border-radius:6px;
+	}
+	.Skin_background div img:hover
+	{
+		border:3px solid #0f0;
+	}
+	.Skin_background img
+	{
+		margin-top:35px;
+		margin-left: 2%;
+		float:left;
+		width:17%;
+		height:100px;
+	}
+	.select_background{background:#4A5464;width:100%;height:30px;left:0px;position:fixed;z-index:20;}
+	.select_background ul{ padding:0px 68px;margin-top:0px;}
+	.select_background ul li{
+	width:100px;
+	height:100%; 
+	list-style:none; 
+	line-height:100%;
+	text-align:center; 
+	float:left;
+	border:1px solid #999999;
+	overflow:hidden;
+	left:0px;top:0px;
+	font:25px bolder "свт╡";
+	border-radius:6px;
+	}
+	.select_background ul li:hover
+	{
+		background:#f00;
+	}
+	.select_background ul li a{ text-decoration:none; color:#FFFFFF}
+	.pic_background{ 
+	margin-top:29px;
+	background:url(../images_logo/5_top.jpg) no-repeat; 
+	background-size:100% 240px;
+	width:100%;
+	height:240px;
+	}
+	.pic_background .text{
+	position:relative;
+	float:left;
+	width:195px;
+	height:195px;
+	padding-left:20px;
+	margin-right:20px;
+	background-size:150px 150px;
+	background-position:50px 50px;
+	}
+	.pic_background .text .head{
+	position:absolute;
+	width:100px; 
+	height:100px; 
+	border-radius:97px;
+	margin-left:44px;
+	margin-top:38px;
+	}
+	.pic_background .text:hover .head{
+	transform:rotate(360deg); transition:all 1.5s ease;
+	}
+	.pic_background .text .head_border{
+	position:absolute;
+	width:190px; 
+	height:190px; 
+	}
+	.pic_background .icon_name{
+	width:20%;
+	height:65%;
+	float:left;
+	}
+	.pic_background .icon_name .name{
+	height:50%;
+	width:100%;
+	}
+	.pic_background .icon_name .name h1{
+	margin-top:24px;
+	margin-left:57px;
+	color:#CCFF00;
+	font-size:40px;
+	}
+	.pic_background .icon_name .name:hover{
+	text-decoration:underline;
+	}
+	.pic_background .icon_name .name h2:hover{
+	color:#00FF00;
+	}
+	.pic_background .icon_name .icon{
+	height:50%;
+	width:100%;
+	}
+	.pic_background .icon_name .icon div{
+	width:26px;
+	height:24px;
+	background:url(../images_logo/Web_icon.png);
+	background-position:342px 713px; 
+	float:left;
+	margin-top:17px;
+	margin-left:15px;
+	}
+	.pic_background .icon_name .icon p{
+	margin-top:22px;
+	margin-left:3px;
+	float:left;
+	color:#FFFF00;
+	}
+	.pic_background .book{
+	width:20%;
+	height:70%;
+	float:left;
+	margin-left:40%;
+	}
+	.pic_background .book .pic1{
+	float:left;
+	width:18px;
+	height:100%;
+	}
+	.pic_background .book .text_scroll{
+	position:relative;
+	float:left;
+	width:200px;
+	height:100%;
+	overflow:hidden;
+	}
+	.pic_background .book .text_scroll .text_scrollbox{
+	position:absolute;
+	margin-top:18px;
+	width:200px;
+	height:69%;
+	overflow:hidden;
+	}
+	.pic_background .book .text_scroll .text_scrollbox div{
+	width:200px;
+	height:100%;
+	margin-left:-200px;
+	transition:all 5s ease;
+	}
+	.pic_background:hover .book .text_scroll .text_scrollbox div{
+	transition:all 5s ease;
+	margin-left:-20px;
+	}
+	.pic_background .book .text_scroll .pic2{
+	transition:all 5s ease;
+	float:left;
+	width:200px;
+	height:100%;
+	margin-left:-180px;
+	}
+	.pic_background:hover .book .text_scroll .pic2{
+	margin-left:0px;
+	transition:all 5s ease;
+	}
+	.pic_background .corner{
+	background:url(../images_logo/Corner_01.png) no-repeat;
+	background-position:56% 4%;
+	background-size:490px 300px;
+	right:0px;
+	width:100px;
+	height:100px;
+	position:absolute;
+	}
+	.pic_background .menu{
+	background:rgba(255, 255, 255, 0.11);
+	width:100%;
+	height:35px;
+	top: 200px;
+  	position: absolute;
+    box-shadow: 3px 6px 8px;
+	}
+	.pic_background .menu .ul1{ margin:0 177px;}
+	.pic_background .menu .ul1 .menu1{
+	background:url(../images_logo/button2.png);
+	background-position:245px 230px;
+	background-size: 387px 270px;
+	position:relative;
+	display: block;
+	height: 35px;
+	float: left;
+	width: 120px;
+	list-style-type: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #F0F0F0;
+	text-align: center;
+	line-height: 29px;
+	}
+	.pic_background .menu .ul1 .menu1 a{ text-decoration:none; color:#FFFFFF;}
+	.pic_background .menu .ul1 .menu1 ul{width:100%;position: absolute;z-index: 0;top:-9999px;}
+	.pic_background .menu .ul1 .menu1:hover{
+	background-position:184px 84px;
+	}
+	.pic_background .menu .ul1 .menu1 ul .menu2{
+	background:url(../images_logo/button1.png);
+	background-position:245px 230px;
+	background-size: 387px 270px;
+	opacity:0;
+	margin-left:-40px;
+	width: 100%;
+	list-style-type: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #F0F0F0;
+	text-align: center;
+	line-height: 36px;
+	-webkit-transform: rotateY(180deg);
+	}
+	.pic_background .menu .ul1 .menu1:hover ul{top:100%;}
+	.pic_background .menu .ul1 .menu1:hover ul .menu2{
+	max-height: 2000px;
+	opacity:1;
+	transform:rotateY(0deg); 
+	transition:all 0.2s ease;
+	}
+	.pic_background .menu .ul1 .menu1 ul .menu2:hover{
+	background-position:244px 194px;
+	background-size: 387px 270px;
+	transition:all 0s ease;
+	}
+	.pic_background .menu .ul1 .menu1 ul .menu2:active{
+	background-position:321px 82px;
+	background-size: 387px 270px;
+	}
+	.pic_background .menu .ul1 .menu1:hover ul li:nth-child(1){
+	-webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+	}
+	.pic_background .menu .ul1 .menu1:hover ul li:nth-child(2){
+	-webkit-transition-delay: 50ms;
+    -moz-transition-delay: 50ms;
+    -ms-transition-delay: 50ms;
+    -o-transition-delay: 50ms;
+    transition-delay: 50ms;
+	}
+	.pic_background .menu .ul1 .menu1:hover ul li:nth-child(3){
+	-webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -ms-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+	}
+	.pic_background .menu .ul1 .menu1:hover ul li:nth-child(4){
+	-webkit-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+    -ms-transition-delay: 150ms;
+    -o-transition-delay: 150ms;
+    transition-delay: 150ms;
+	}
+	.pic_background .menu .ul1 .menu1:hover ul li:nth-child(5){
+	-webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -ms-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+	}
+	.pic_background .menu .ul1 .menu1:hover ul li:nth-child(6){
+	-webkit-transition-delay: 250ms;
+    -moz-transition-delay: 250ms;
+    -ms-transition-delay: 250ms;
+    -o-transition-delay: 250ms;
+    transition-delay: 250ms;
+	}
+	.bottom{
+    width:100%;
+    height:9900px;
+    overflow:hidden;
+    /*
+	background:url("images_Skin/5.jpg") no-repeat;
+	*/
+	background:#071820;
+    background-size: cover;
+    background-position: center 0px;
+    background-attachment: fixed;
+	}
+.panel_Share {
+width:250px;
+height:285px;
+top:250px;
+position:fixed;
+margin-left:-227px;
+padding:0px;
+transition:all 0.5s ease;
+z-index:10;
+}
+    .panel_Share:hover {
+    margin-left:-17px;
+    transition:all 0.5s ease;
+    }
+.backTop
+{
+	background:#fff;
+	width:34px;
+	height:37px;
+	z-index:3;
+	position:fixed;
+	top:611px;
+	left:983px;
+}
+.backTop:hover
+{
+	background:#f00;
+}
+.backTop:hover a
+{
+	color:White;
+}
+.backTop a
+{
+	text-decoration:none;
+	color:Black;
+	font-weight:bold;
+}
+.music_Player
+{
+	width:400px;
+	height:404px;
+	position:fixed;
+	top:231px;
+	left:-363px;
+}
+.music_Player .songList
+{
+	width:65.5%;
+	height:80%;
+	margin-left:20%;
+	margin-top:0px;
+	background:url("../music_Player/1-1.jpg");
+	background-size:100% 100%;
+	border:1px solid #CF5151;
+	position:absolute;
+}
+.music_Player .songList .song_Box
+{
+	width:106%;
+	height:100%;
+	border:1px solid #fff;
+	margin:0 auto;
+	background:rgba(255, 255, 255, 0.23);
+	overFlow-x:hidden; 
+	overFlow-y:scroll;
+}
+.music_Player .songList .song_Box ul li
+{
+	line-height:40px;
+	width:110%;
+	list-style:none;
+	margin-left:-32px;
+	overflow:hidden;
+	
+}
+.music_Player .songList .song_Box ul li:hover
+{
+	background:#fff;
+	border-radius:6px;
+}
+.music_Player .songList .song_Box ul li a
+{
+	text-decoration:none;
+	color:black;
+	font-size:19px;
+	font-weight:bold;
+}
+.music_Player .songList .song_Box ul li a:hover
+{
+   text-decoration:underline;
+}
+.music_Player .music_Box
+{
+	width:100%;
+	height:19%;
+	top:324px;
+	position:relative;
+}
+.music_Player .music_Box .listIcon
+{
+	width:22px;
+	height:25px;
+	position:absolute;
+	right:68px;
+	top:0px;
+	background:url("../images_Skin/player_bg.png");
+	background-position:646px -100px;
+	z-index:5;
+}
+.music_Player .music_Box .songer
+{
+	width:20%;
+	height:100%;
+	float:left;
+	background:url("../music_Player/1.jpg");
+	background-size:100% 100%;
+	position:relative;
+}
+.music_Player .music_Box .control
+{
+	background:#000;
+	width:76%;
+	height:100%;
+	float:left;
+	position:relative;
+}
+.music_Player .music_Box .control div
+{
+	float:left;
+	width:10%;
+	height:100%;
+	margin-left:5%;
+	position:relative;
+}
+.music_Player .music_Box .control div:nth-child(1)
+{
+	margin-left:10%;
+}
+.music_Player .music_Box .control div:nth-child(4)
+{
+	margin-left:124px;
+	width:28px;
+}
+.music_Player .music_Box .control div:nth-child(4) span
+{
+	height:100%;
+	top:0;
+	width:22px;
+	margin-left:6px;
+	background:url("../images_Skin/player_bg.png");
+	background-position:777px -18px;
+}
+.music_Player .music_Box .control .last span
+{
+	background:url("../images_Skin/player_bg.png");
+	background-position:728px 3px;
+}
+.music_Player .music_Box .control .last span:hover
+{
+	background-position:728px -27px;
+}
+.music_Player .music_Box .control .stop span
+{
+	background:url("../images_Skin/player_bg.png");
+	background-position:692px -3px;
+}
+.music_Player .music_Box .control .stop span:hover
+{
+	background-position:692px -44px;
+}
+.music_Player .music_Box .control .next span
+{
+	background:url("../images_Skin/player_bg.png");
+	background-position:651px 3px;
+}
+.music_Player .music_Box .control .next span:hover
+{
+	background-position:651px -27px;
+}
+.music_Player .music_Box .control div span
+{
+	position:absolute;
+	top:30%;
+	width:100%;
+	height:36px;
+}
+
+
+
+
+
+
+
