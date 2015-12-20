@@ -218,6 +218,16 @@
             this.music.play();
             Tag=true;
         }
+        setInterval(function(){
+            if(music.ended){
+                i++;
+                if(i>8){
+                    i=1;           
+                }
+                music=document.getElementById("music_"+i);
+                music.play();
+            }
+        },1000);
         //µã»÷ÔÝÍ£
         $(".Start").click(function(){
             //·ÇÔÝÍ£×´Ì¬
